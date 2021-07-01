@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Core.Entities
 {
-    class Project : BaseEntity
+    public class Project : BaseEntity
     {
         public Project(string title, string description, int idClient, int idFreeLancer, decimal totalCost)
         {
