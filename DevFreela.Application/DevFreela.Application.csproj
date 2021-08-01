@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\DeleteProject\" />
     <Folder Include="Queries\GetAllSkills\" />
   </ItemGroup>
 

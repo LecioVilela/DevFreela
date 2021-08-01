@@ -39,6 +39,7 @@ namespace DevFreela.Application.Services.Implementations
             var comment = new ProjectComment(inputModel.Content, inputModel.IdProject, inputModel.IdUser);
 
             _dbContext.ProjectComments.Add(comment);
+            _dbContext.SaveChanges();
         }
 
         public void Delete(int id)
@@ -46,6 +47,7 @@ namespace DevFreela.Application.Services.Implementations
             var project = _dbContext.Projects.SingleOrDefault(p => p.Id == id);
 
             project.Cancel();
+            _dbContext.SaveChanges();
         }
 
         public void Finish(int id)
