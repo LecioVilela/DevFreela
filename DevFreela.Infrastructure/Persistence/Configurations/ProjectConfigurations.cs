@@ -3,9 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DevFreela.Infrastructure.Persistence.Configurations
 {
@@ -18,8 +16,8 @@ namespace DevFreela.Infrastructure.Persistence.Configurations
 
             builder
                 .HasOne(p => p.Freelancer)
-                .WithMany(f => f.FreeLanceProjects)
-                .HasForeignKey(p => p.IdFreeLancer)
+                .WithMany(f => f.FreelanceProjects)
+                .HasForeignKey(p => p.IdFreelancer)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder
