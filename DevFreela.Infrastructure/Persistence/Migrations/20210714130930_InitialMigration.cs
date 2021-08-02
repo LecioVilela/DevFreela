@@ -47,7 +47,7 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IdClient = table.Column<int>(type: "int", nullable: false),
-                    IdFreeLancer = table.Column<int>(type: "int", nullable: false),
+                    IdFreelancer = table.Column<int>(type: "int", nullable: false),
                     TotalCost = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     StartedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -64,8 +64,8 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Projects_Users_IdFreeLancer",
-                        column: x => x.IdFreeLancer,
+                        name: "FK_Projects_Users_IdFreelancer",
+                        column: x => x.IdFreelancer,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -142,9 +142,9 @@ namespace DevFreela.Infrastructure.Persistence.Migrations
                 column: "IdClient");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Projects_IdFreeLancer",
+                name: "IX_Projects_IdFreelancer",
                 table: "Projects",
-                column: "IdFreeLancer");
+                column: "IdFreelancer");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserSkills_IdSkill",

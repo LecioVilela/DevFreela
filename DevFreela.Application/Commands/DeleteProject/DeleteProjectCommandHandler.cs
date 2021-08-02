@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Application.Commands.DeleteProject
 {
-    class DeleProjectCommandHandler : IRequestHandler<DeleteProjectCommand, Unit>
+    class DeleteProjectCommandHandler : IRequestHandler<DeleteProjectCommand, Unit>
     {
         private readonly DevFreelaDbContext _dbContext;
-        public DeleProjectCommandHandler(DevFreelaDbContext dbContext)
+        public DeleteProjectCommandHandler(DevFreelaDbContext dbContext)
         {
             _dbContext = dbContext;
         }

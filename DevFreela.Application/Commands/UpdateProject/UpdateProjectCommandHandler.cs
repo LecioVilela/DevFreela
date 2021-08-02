@@ -24,7 +24,7 @@ namespace DevFreela.Application.Commands.UpdateProject
 
             await _dbContext.SaveChangesAsync();
 
-            return Task.Value;
+            return  Unit.Value;
         }
     }
 }
