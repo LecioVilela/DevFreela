@@ -21,11 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Commands\" />
-    <Folder Include="Application\Queries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DevFreela.Application\DevFreela.Application.csproj" />
     <ProjectReference Include="..\DevFreela.Core\DevFreela.Core.csproj" />
   </ItemGroup>
