@@ -11,7 +11,7 @@ O objetivo deste projeto é, aperfeiçoar o framework, construindo uma **API RES
 - Dapper 
 - CQRS
 - MediatR
-- JWT -> Jason Web Token
+- JWT -> Json Web Token
 - xUnit -> Para testes unitários
 
 Mas quais funcionalidades foram implementadas?
@@ -90,7 +90,7 @@ MediatR.Extensions.Microsoft.DependencyInjection
 
 ---
 
-## Jason Web Token - JWT
+## Json Web Token - JWT
 
 Basicamente é uma cadeia de caracteres com dados da aplicação e usuário em *base64*, além de uma chave gerada com um algoritmo de *hashing* como o **SHA256**.
 Essa chave é gerada através de uma chave secreta definida na aplicação e que é validada ao receber a requisição.
